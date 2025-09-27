@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#09f">
+    <title>Portfolio JAG</title>
+    <meta rel="icon" type="image/png" href="imagenes/icono.png">
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
+
+    <!-- Etiquetas para SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Portfolio de Esther Carrilero Polidura, Ingeniera de Software">
+
+    <!-- Etiquetas Open Graph -->
+    <meta property="og:title" content="Portfolio de Esther Carrilero Polidura">
+    <meta property="og:description" content="Portfolio de Ingeniera de Software formada en la Universidad de Castilla-La Mancha">
+
+    <!-- Para CSS -->
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <style>
+        body{
+            background: rgba(208,208,208,0.9)
+        }
+    </style>
+
+    <!-- Elemento nav -->
+    <nav>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="https://www.linkedin.com/in/esther-carrilero-polidura-5b9258359/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a download href="documentos/CV_Esther_Carrilero_Polidura.pdf">Descargar CV</a> <!-- No funciona -->
+    </nav>
+</head>
+
+<body>
+    <main>
+        <h1>Portfolio de Esther Carrilero Polidura</h1>
+        <p><strong>Ingeniero de Software</strong> con 0 años de experiencia</p>
+
+        <h2 id="experiencia">Experiencia</h2>
+        <ul>
+            <li class="">ESII</li> <!-- Se pueden añadir atributos -->
+            <li class="">Prácticas en empresa: Teknei</li>
+        </ul>
+    
+        <img title="foto de CV" src="imagenes/jag.jpg" alt="fotografía de Esther Carrilero usada para CV" width="200" height="280">
+        <!-- Poner atributo hidden en algún lado -->
+
+        <!-- Tecnologías favoritas y proyectos usando únicamente elementos <div> -->
+        <!-- <div>
+            <div>Tecnologías favoritas</div>
+            <div>
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+            </div>
+
+            <div>Proyectos en los que he participado</div>
+            <div>
+                <div>
+                    <div>Sitio Web corporativo</div>
+                    <div>Desarrollo de la web corporativa de una empresa.</div>
+                    <div>Tecnologías utilizadas: HTML, JavaScript, CSS</div>
+                </div>
+
+                <div>
+                    <div>Aplicación e-commerce</div>
+                    <div>Desarrollo de una aplicación Web para una tienda.</div>
+                    <div>Tecnologías utilizadas: HTML, CSS, JavaScript</div>
+                </div>
+
+                <div>
+                    <div>Aplicación móvil</div>
+                    <div>Desarrollo de una aplicación móvil para gimnasios.</div>
+                    <div>Tecnologías utilizadas: Kotlin, Android Studio</div>
+                </div>
+            </div>
+        </div> -->
+
+        <aside>
+            <header>
+                <h3>Mis tecnologías favoritas</h3>
+            </header>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </aside>
+
+        <h2 id="proyectos">Proyectos realizados</h2>
+        <section>
+            <article>
+                <header>
+                    Sitio Web corporativo
+                </header>
+                <p>Desarrollo de la web corporativa de una empresa.</p>
+                <footer>
+                    <small>Tecnologías utilizadas: HTML, JavaScript, CSS</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    Sitio Web corporativo
+                </header>
+                <p>Desarrollo de la web corporativa de una empresa.</p>
+                <footer>
+                    <small>Tecnologías utilizadas: HTML, JavaScript, CSS</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    Sitio Web corporativo
+                </header>
+                <p>Desarrollo de la web corporativa de una empresa.</p>
+                <footer>
+                    <small>Tecnologías utilizadas: HTML, JavaScript, CSS</small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" placeholder="JAG" required>
+                    </div>
+                    <div>
+                        <label for="em">Email:</label>
+                        <input type="email" id="em" placeholder="a@a.es" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="why">¿Sobre qué quieres contactar?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Consulta</option>
+                            <option value="3">Otros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="terms">Acepta los términos</label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                    </div>
+                    <div>
+                        <datalist id="lang">
+                            <option value="JavaScript"></option>
+                            <option value="Python"></option>
+                            <option value="C++"></option>
+                        </datalist>
+                        <label>¿Con qué lenguaje necesitas ayuda?</label>
+                        <input list="lang" name="lang">
+                    </div>
+                </fieldset> 
+                <button type="submit">Enviar contacto</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Cómo contacto?</summary>
+                <p>Enviando un correo a esther.carrileropolidura@gmail.com</p>
+            </details>
+            <details>
+                <summary>¿Cómo me llamo?</summary>
+                <p>Esther Carrilero Polidura</p>
+            </details>
+        </section>
+
+        <video src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" muted></video>
+        <audio src="https://filesamples.com/samples/audio/mp3/sample3.mp3" controls></audio>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LCfEqudu4pc?si=Vmsu40N-oALWMIAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <dialog id="modal">
+            <h1>Se puede abrir un modal</h1>
+            <p>Es totalmente nativo</p>
+            <button id="cerrar">Cerrar</button>
+        </dialog>
+        <button id="show">Ver más información</button>
+
+        <script>
+            window.show.addEventListener('click', () => {
+                window.modal.showModal()
+            });
+            window.cerrar.addEventListener('click', () => {
+                window.modal.close()
+            });
+        </script>
+    </main>
+</body>
+
+
