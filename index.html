@@ -16,38 +16,33 @@
     <meta property="og:description" content="Portfolio de Ingeniera de Software formada en la Universidad de Castilla-La Mancha">
 
     <!-- Para CSS -->
-    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
     <style>
         body{
             background: rgba(208,208,208,0.9)
         }
     </style>
-
-    <!-- Elemento nav -->
-    <nav>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="https://www.linkedin.com/in/esther-carrilero-polidura-5b9258359/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a download href="documentos/CV_Esther_Carrilero_Polidura.pdf">Descargar CV</a> <!-- No funciona -->
-    </nav>
 </head>
 
 <body>
-    <main>
+    <header>
+        <!-- Elemento nav -->
+        <nav>
+            <a href="#experiencia">Experiencia</a> |
+            <a href="#proyectos">Proyectos</a> ||||
+            <a href="https://www.linkedin.com/in/esther-carrilero-polidura-5b9258359/" target="_blank" rel="noreferrer">LinkedIn</a> |
+            <a href="https://www.github.com/EstherCarrilero" target="_blank" rel="noreferrer">GitHub</a> |
+            <a download href="documentos/CV_Esther_Carrilero_Polidura.pdf">Descargar CV</a> <!-- No funciona -->
+        </nav>
         <h1>Portfolio de Esther Carrilero Polidura</h1>
-        <p><strong>Ingeniero de Software</strong> con 0 años de experiencia</p>
-
-        <h2 id="experiencia">Experiencia</h2>
-        <ul>
-            <li class="">ESII</li> <!-- Se pueden añadir atributos -->
-            <li class="">Prácticas en empresa: Teknei</li>
-        </ul>
+    </header>
+    <main>
+        <p><strong>Estudiante de Ingeniería Informática</strong> en la Universidad de Castilla-La Mancha, en Albacete (ESIIAB). <br> Interesada en el desarrollo de software y las bases de datos.</p>
     
         <img title="foto de CV" src="imagenes/jag.jpg" alt="fotografía de Esther Carrilero usada para CV" width="200" height="280">
-        <!-- Poner atributo hidden en algún lado -->
 
-        <!-- Tecnologías favoritas y proyectos usando únicamente elementos <div> -->
-        <!-- <div>
+        <!-- Tecnologías favoritas y proyectos usando únicamente elementos <div>, está escondido -->
+        <div hidden>
             <div>Tecnologías favoritas</div>
             <div>
                 <div>HTML</div>
@@ -75,50 +70,110 @@
                     <div>Tecnologías utilizadas: Kotlin, Android Studio</div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <aside>
             <header>
                 <h3>Mis tecnologías favoritas</h3>
             </header>
             <ol>
+                <li>Python</li>
                 <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li>SQL</li>
             </ol>
         </aside>
+        <aside>
+            <header>
+                <h3>Idiomas</h3>
+            </header>
+            <ul>
+                <li><strong>Español</strong> - Nativo</li>
+                <li><strong>Inglés</strong> - Cambridge English - B2</li>
+                <li><strong>Alemán</strong> - Básico</li>
+            </ul>
+        </aside>
 
-        <h2 id="proyectos">Proyectos realizados</h2>
+        <h2 id="educacion">Educación</h2>
         <section>
             <article>
                 <header>
-                    Sitio Web corporativo
+                    <h3><strong>Grado en Ingeniería Informática</strong></h3>
                 </header>
-                <p>Desarrollo de la web corporativa de una empresa.</p>
+                <p>Universidad de Castilla-La Mancha, Albacete</p>
                 <footer>
-                    <small>Tecnologías utilizadas: HTML, JavaScript, CSS</small>
+                    <small>09/2022 - Presente</small>
                 </footer>
             </article>
-
+            <br>
             <article>
                 <header>
-                    Sitio Web corporativo
+                    <strong>Matrícula de honor en asignaturas:</strong>
                 </header>
-                <p>Desarrollo de la web corporativa de una empresa.</p>
-                <footer>
-                    <small>Tecnologías utilizadas: HTML, JavaScript, CSS</small>
-                </footer>
+                <ul>
+                    <li>Lógica</li>
+                    <li>Programación Concurrente y Tiempo Real</li>
+                    <li>Redes de Computadores II</li>
+                    <li>Arquitectura de Computadores</li>
+                    <li>Desarrollo de Bases de Datos</li>
+                </ul>
             </article>
+        </section>
 
+        <h2 id="proyectos">Proyectos realizados</h2>
+        <section>
+            <ul>
+                <li>
+                    <article>
+                        <header>
+                            <h3><strong>Aplicación móvil orientada a movimiento físico y sueño</strong></h3>
+                        </header>
+                        <p>Enfocada en cuenta pasos y selección de rutas</p>
+                        <p>Tecnologías utilizadas: Kotlin, Android Studio, Google Maps API, Acelerómetro</p>
+                        <footer>
+                            <small>09/2024 - 12/2024</small>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <header>
+                            <h3><strong>Cuadro de mando estratégico para marketing y gestión de productos SaaS</strong></h3>
+                        </header>
+                        <p>Dirigido a departamentos de marketing y gestión de productos SaaS, que permite monitorizar diversas campañas con sus respectivas métricas</p>
+                        <p>Tecnologías utilizadas: Angular, Python, AWS (Lambda, API Gateway, S3, RDS, EventBridge), PostgreSQL, Docker</p>
+                        <footer>
+                            <small>06/2025 - Presente</small>
+                        </footer>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <h2 id="experiencia">Experiencia</h2>
+        <section>
             <article>
                 <header>
-                    Sitio Web corporativo
+                    <h3><strong>Desarrolladora full-stack (Prácticas)</strong></h3>
                 </header>
-                <p>Desarrollo de la web corporativa de una empresa.</p>
+                <p>Realizadas en Teknei, con ubicación en Albacete, España</p>
+                <ul>
+                    <li>Proyecto sobre un cuadro de mando estratégico para marketing</li>
+                    <li>Frontend: Desarrollado en Angular 19, con lenguajes TypeScript, HTML y CSS</li>
+                    <li>Backend: Desarrollado en Python 3.12, utilizando SQLAlchemy y AWS (Lambda, API Gateway, RDS, S3, Cognito)</li>
+                    <li>Otras herramientas: Swagger, DBeaver, Docker</li>
+                </ul>
                 <footer>
-                    <small>Tecnologías utilizadas: HTML, JavaScript, CSS</small>
+                    <small>06/2025 - 09/2025</small>
                 </footer>
-            </article>
+        </section>
+
+        <h2 id="experiencia">Aptitudes</h2>
+        <section>
+            <ul>
+                <li><strong>Lenguajes de programación:</strong> Python, Java, C, SQL, Kotlin, HTML</li>
+                <li><strong>Bases de datos:</strong> PostgreSQL, Oracle SQL</li>
+                <li><strong>Otras herramientas:</strong> GitHub, Jira, Swagger, Dbeaver, Visual Studio Code</li>
+            </ul>
         </section>
 
         <section>
@@ -146,10 +201,6 @@
                         </select>
                     </div>
                     <div>
-                        <label for="terms">Acepta los términos</label>
-                        <input type="checkbox" id="terms" name="terms" required>
-                    </div>
-                    <div>
                         <datalist id="lang">
                             <option value="JavaScript"></option>
                             <option value="Python"></option>
@@ -157,6 +208,10 @@
                         </datalist>
                         <label>¿Con qué lenguaje necesitas ayuda?</label>
                         <input list="lang" name="lang">
+                    </div>
+                    <div>
+                        <label for="terms">Acepta los términos</label>
+                        <input type="checkbox" id="terms" name="terms" required>
                     </div>
                 </fieldset> 
                 <button type="submit">Enviar contacto</button>
@@ -170,31 +225,56 @@
                 <p>Enviando un correo a esther.carrileropolidura@gmail.com</p>
             </details>
             <details>
-                <summary>¿Cómo me llamo?</summary>
-                <p>Esther Carrilero Polidura</p>
+                <summary>¿Qué tipo de rol buscas?</summary>
+                <p>Principalmente desarrolladora back-end, aunque también es interesante el desarrollo del front-end</p>
             </details>
         </section>
 
-        <video src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" muted></video>
-        <audio src="https://filesamples.com/samples/audio/mp3/sample3.mp3" controls></audio>
+        <section>
+            <h2>Vídeo destacado</h2>
+            <video controls src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" muted></video>
+        </section> 
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LCfEqudu4pc?si=Vmsu40N-oALWMIAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <dialog id="modal">
-            <h1>Se puede abrir un modal</h1>
-            <p>Es totalmente nativo</p>
-            <button id="cerrar">Cerrar</button>
-        </dialog>
-        <button id="show">Ver más información</button>
+        <section>
+            <h2>Música relajante</h2>
+            <article>
+                <header>
+                    <h4><i>Audio de muestra</i></h4>
+                </header>
+                <audio controls src="https://filesamples.com/samples/audio/mp3/sample3.mp3" controls></audio>
+            </article>
+            <article>
+                <header>
+                    <h4><i>Hans Zimmer - Young Hearts</i></h4>
+                </header>
+                <audio controls src="audios/03-Hans-Zimmer-Spirit-Stallion-of-the-Cimarron-Young-Hearts.mp3" controls></audio>
+            </article>
+            <article>
+                <header>
+                    <h4><i>Tutorial de Piano</i></h4>
+                </header>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BZohNcGu0iM?si=szHr5sR-LhDJjFeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
 
-        <script>
-            window.show.addEventListener('click', () => {
-                window.modal.showModal()
-            });
-            window.cerrar.addEventListener('click', () => {
-                window.modal.close()
-            });
-        </script>
+        <section>
+            <h2>Más información</h2>
+            <dialog id="modal">
+                <h1>Información adicional</h1>
+                <p>Disponible tanto para trabajo presencial como para teletrabajo</p>
+                <button id="cerrar">Cerrar</button>
+            </dialog>
+            <button id="show">Ver más información</button>
+        </section>
     </main>
+    <footer>
+        <p>Portfolio realizado por Esther Carrilero Polidura - 2025</p>
+    </footer>
+    <script>
+        window.show.addEventListener('click', () => {
+            window.modal.showModal()
+        });
+        window.cerrar.addEventListener('click', () => {
+            window.modal.close()
+        });
+    </script>
 </body>
-
-
